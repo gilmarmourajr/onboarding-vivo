@@ -1,0 +1,49 @@
+:root {
+    --main-vivo: #660099;
+    --main-color: #FFFFFF;
+    --main-text: #000000;
+    --alt-text: #FFFFFF;
+    --border-main: 2px solid #676767;
+    --main-padding: 30px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--main-padding);
+
+    background-color: var(--main-vivo);
+    color: var(--alt-text);
+
+}
+
+header div, header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+header div {
+
+}
+
+header nav {
+    min-width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav a {
+    color: var(--main-color);
+}
