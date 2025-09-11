@@ -4,7 +4,7 @@
     --main-color: #FFFFFF;
     --main-text: #000000;
     --alt-text: #FFFFFF;
-    --color-h3: #4e4949;
+    --color-metas: #4e4949;
     --border-main: 2px solid #676767;
     --main-padding: 30px;
 }
@@ -13,6 +13,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
 }
 
 header {
@@ -42,9 +46,17 @@ header nav {
     gap: 20px;
 }
 
+.vivo-logo img {
+    margin-right: 10px;
+    filter: grayscale(100%) brightness(1000%);
+    width: 30px;
+    height: 40px;
+}
+
 a {
     transition: 0.5s;
     text-decoration: none;
+    color: var(--main-vivo);
 }
 
 .current-page {
@@ -67,6 +79,10 @@ header nav a {
 .title-main {
     text-align: center;
     margin: 20px 0;
+}
+
+.h1-titulo {
+    font-family: "Open Sans", sans-serif;
 }
 
 .h1-metas {
@@ -92,4 +108,59 @@ section {
     border: var(--border-main);
     padding: 10px var(--main-padding);
     margin: 15px 5px;
+}
+
+.metas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-title {
+    color: var(--color-metas);
+    font-weight: bold;
+    font-size: 1.3em;
+    
+}
+
+.metas-grid > *, .tarefas-grid > *{
+    border-bottom: var(--border-main);
+    padding: 6px 0;
+}
+
+.metas-grid a {
+    width: fit-content;
+}
+
+.apertar-botao {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.apertar-botao img {
+    width: 30px;
+    height: auto;
+}
+
+.tarefas-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.border-btn {
+    border: 2px solid var(--main-vivo);
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.border-btn:hover {
+    border: 2px solid var(--hover-color);
 }

@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onboarding Vivo</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <img src="./images/logo-vivo.png" alt="Logo da Vivo">
-            <h1>Onboarding Vivo</h1>
+        <div class="vivo-logo">
+            <img src="./images/logo-vivo.png" alt="Logo da vivo">
+            <h1 class="h1-titulo">Onboarding Vivo</h1>
         </div>
         <nav>
             <p class="current-page">Início</p>
@@ -21,25 +25,69 @@
         </nav>
         <img src="" alt="Foto do usuário atual">
     </header>
-    <body>
-        <h1 class="title-main">Olá, usuário!</h1>
+    <main>
+        <h1 class="title-main">Olá, {user}!</h1>
         <section id="metas-main">
-            <h1 class="h1-metas">Minhas metas de 30 dias</h1>
-            <h1 class="h1-metas">Meta</h1>
-            <h1 class="h1-status">Status</h1>
-            <div class="p-metas">
-                <p>Conheça o seu gestor</p>
-                <p>Baixe o Vivo DevKit</p>
-                <p>Envie um e-mail para o seu buddy</p>
+            <div class="section-title">
+                <h1>Minhas metas de 30 dias</h1>
+            </div>
+            <div class="metas-grid">
+                <p class="grid-title">Meta</p>
+                <p class="grid-title">Status</p>
+                <p>Conheça seu gestor</p>
+                <div>
+                    <a class="apertar-botao" href="" onclick="toggleImage(event, this.querySelector('img'))"><img src="./images/check-mark.png" alt="Check preto e branco"></a>
+                </div>
+                <p>Baixe o Vivo Devkit</p>
+                <div>
+                    <a class="apertar-botao" href="" onclick="toggleImage(event, this.querySelector('img'))"><img src="./images/check-mark.png" alt="Check preto e branco"></a>
+                </div>
+                <p>Envie um email para um buddy</p>
+                <div>
+                    <a class="apertar-botao" href="" onclick="toggleImage(event, this.querySelector('img'))"><img src="./images/check-mark.png" alt="Check preto e branco"></a>
+                </div>
+                
             </div>
             
         </section>
-        <div id="tarefas-main">
+        <section id="tarefas-main">
+            <div class="section-title">
+                <h1>Minhas tarefas</h1>
+                <div class="border-btn">
+                    <a href="./pages/minhas-tarefas.html">Ver todas as tarefas</a>
+                </div>
+            </div>
+            <div class="tarefas-grid">
+                <p class="grid-title">Descrição</p>
+                <p class="grid-title">Contato de suporte</p>
+                <p class="grid-title">Prazo estimado</p>
+                <p class="grid-title">Concluir</p>
+                <p>Traga os seus documentos para completar a papelada de admissão!</p>
+                <p>Fernando Nakasone</p>
+                <p>25 de maio, 2025</p>
+                <div>
+                    <a class="apertar-botao" href="" onclick="toggleImage(event, this.querySelector('img'))"><img src="./images/check-mark.png" alt="Check preto e branco"></a>
+                </div>
+            </div>
 
-        </div>
-        <div id="rede-main">
-
-        </div>
-    </body>
+        </section>
+        <section id="rede-main">
+            <div class="section-title">
+                <h1 class="grid-title">Minha rede</h1>
+                <div class="border-btn">
+                    <a href="./pages/minha-rede.html">Ver minha Rede</a>
+                </div>
+            </div>
+            <div>
+                <img src="./images/pessoa1.jpg" alt="role buddy">
+                <p>Maria Alberta</p>
+                <img src="./images/pessoa2.jpg" alt="gestor">
+                <p>João Paulo</p>
+                <img src="./images/pessoa3.jpg" alt="culture buddy">
+                <p>Gilmar Franco</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
