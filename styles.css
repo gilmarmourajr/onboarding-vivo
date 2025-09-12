@@ -179,14 +179,14 @@ section {
     flex-basis: 100px;
 }
 
-.rede-imgs img {
+.rede-img > img {
     height: auto;
     max-width: 100%;
     border: 1px solid black;
     border-radius: 50%;
 }
 
-.rede-imgs div {
+.rede-img {
     min-width: 200px;
     max-width: 20%;
     display: flex;
@@ -196,7 +196,7 @@ section {
     margin-bottom: 15px;
 }
 
-.rede-imgs div p:first-of-type {
+.rede-img p:first-of-type {
     font-weight: 600;
     margin-top: 10px;
 }
@@ -205,6 +205,17 @@ section {
     min-height: 82vh;
 }
 
-.rede-imgs.full div {
+.rede-imgs.full .rede-img {
     max-width: 15%;
+}
+
+.rede-img div {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.rede-img div img {
+    height: auto;
+    width: 25px;
 }
