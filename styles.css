@@ -219,3 +219,30 @@ section {
     height: auto;
     width: 25px;
 }
+
+.progress-bar-container {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.progress-bar {
+    margin: 100px 0 50px;
+    border: 1px solid black;
+    height: 50px;
+    width: 60vw;
+}
+
+.current-progress {
+    height: 100%;
+    width: 25%;
+    background-color: var(--main-vivo);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5em;
+    font-weight: 600;
+}
