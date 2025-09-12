@@ -173,7 +173,7 @@ section {
 .rede-imgs {
     display: flex;
     justify-content: space-around;
-    gap: 5px;
+    gap: 50px;
     align-items: center;
     flex-wrap: wrap;
     flex-basis: 100px;
@@ -181,14 +181,14 @@ section {
 
 .rede-imgs img {
     height: auto;
-    width: 60%;
+    max-width: 100%;
     border: 1px solid black;
     border-radius: 50%;
 }
 
 .rede-imgs div {
-    min-width: 300px;
-    max-width: 30%;
+    min-width: 200px;
+    max-width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,4 +199,12 @@ section {
 .rede-imgs div p:first-of-type {
     font-weight: 600;
     margin-top: 10px;
+}
+
+.full {
+    min-height: 82vh;
+}
+
+.rede-imgs.full div {
+    max-width: 15%;
 }
