@@ -53,27 +53,37 @@ header nav {
     height: 40px;
 }
 
-a {
+.current-page {
+    text-decoration: underline;
+}
+
+.border-btn, nav a, .current-page {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.border-btn, nav a {
+    text-decoration: none;
+
+}
+
+nav a {
+    color: var(--main-color);
+}
+
+.border-btn {
+    border: 2px solid var(--main-vivo);
+    border-radius: 10px;
+    padding: 5px;
+
     transition: 0.5s;
     text-decoration: none;
     color: var(--main-vivo);
 }
 
-.current-page {
-    text-decoration: underline;
-}
-
-a, .current-page {
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a:hover {
+.border-btn:hover {
+    border: 2px solid var(--hover-color);
     color: var(--hover-color);
-}
-
-header nav a {
-    color: var(--main-color);
 }
 
 .title-main {
@@ -159,17 +169,6 @@ section {
     color: var(--color-metas);
 }
 
-.border-btn {
-    border: 2px solid var(--main-vivo);
-    border-radius: 10px;
-    padding: 5px;
-    transition: 0.5s;
-}
-
-.border-btn:hover {
-    border: 2px solid var(--hover-color);
-}
-
 .rede-imgs {
     display: flex;
     justify-content: space-around;
@@ -245,4 +244,73 @@ section {
 
     font-size: 1.5em;
     font-weight: 600;
+}
+
+#central-documentos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#links-uteis, #seus-beneficios {
+    grid-column: 1 / 3;
+}
+
+.documentos-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.documentos-container div {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#documentos-importantes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+#documentos-importantes div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:after {
+font-size: 13px;
+color: #777;
+float: right;
+margin-left: 5px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
