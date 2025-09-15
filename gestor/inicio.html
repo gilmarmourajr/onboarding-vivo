@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onboarding Vivo</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
     <header>
         <div class="vivo-logo">
@@ -14,9 +16,8 @@
         </div>
         <nav>
             <p class="current-page">Início</p>
-            <a href="../gestor/cadastros.html">Cadastros</a>
-            <a href="../gestor/gestao-tarefas.html">Gestão de Tarefas</a>
-            <a href="../gestor/logs-auditoria.html">Logs de Auditoria</a>
+            <a href="./cadastros.html">Cadastros</a>
+            <a href="./gestao-tarefas.html">Gestão de Tarefas</a>
         </nav>
     </header>
 
@@ -24,39 +25,93 @@
         <h1 class="title-main">Olá, gestor!</h1>
         <section id="progresso-main">
             <div class="section-title">
-                    <h1>Progresso dos novos colaboradores</h1>
+                <h1>Progresso dos novos colaboradores</h1>
             </div>
-           <h2>13 novos colaboradores atualmente</h2>
+            <h2>13 novos colaboradores atualmente</h2>
             <div>
                 <h3>Em andamento</h3>
-                    <div class="progress-bar">
-                        <div id="progress-em-andamento" class="current-progress">60%</div>
-                    </div>
+                <div class="progress-bar">
+                    <div id="progress-em-andamento" class="current-progress">60%</div>
+                </div>
             </div>
             <div>
                 <h3>Metas atrasadas</h3>
-                    <div class="progress-bar">
-                        <div id="progress-metas-atrasadas" class="current-progress">15%</div>
-                    </div>
+                <div class="progress-bar">
+                    <div id="progress-metas-atrasadas" class="current-progress">15%</div>
+                </div>
             </div>
             <div>
                 <h3>Concluído</h3>
-                    <div class="progress-bar">
-                        <div id="progress-concluido" class="current-progress">25%</div>
-                    </div>
+                <div class="progress-bar">
+                    <div id="progress-concluido" class="current-progress">25%</div>
+                </div>
             </div>
         </section>
-        <section class="colab-and">
-            <div class="section-title">
-                    <h1>Colaboradores em andamento</h1>
+
+<div class="sections-container">
+        <section class="card-colaboradores">
+            <div class="table-title">
+                <h2>Colaboradores em andamento</h2>
             </div>
-            <div class="section-title">
-                <h1>Colaborador</h1>
-            </div>
-            <div class="section-title">
-                <h1>Tarefas concluidas</h1>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Colaborador</th>
+                        <th>Tarefas concluídas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fernando Nakasone</td>
+                        <td>1 / 6</td>
+                    </tr>
+                    <tr>
+                        <td>Gilmar Moura</td>
+                        <td>6 / 7</td>
+                    </tr>
+                    <tr>
+                        <td>Eduarda Ferreira</td>
+                        <td>1 / 4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn-secondary-main">Ver todos os colaboradores</button>
         </section>
+
+        <section class="card-colaboradores">
+            <div class="table-title">
+                <h2>Atividade recente</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Colaborador</th>
+                        <th>Atividade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fernando Nakasone</td>
+                        <td>Concluiu uma tarefa</td>
+                    </tr>
+                    <tr>
+                        <td>Gilmar Moura</td>
+                        <td>Alterou o perfil</td>
+                    </tr>
+                    <tr>
+                        <td>Eduarda Ferreira</td>
+                        <td>Concluiu uma tarefa</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn-secondary-main">Ver todas as tarefas</button>
+        </section>
+    </div>
+    <div class="button-row">
+        <button class="btn-primary-main">Cadastrar colaborador</button>
+        <button class="btn-primary-main">Cadastrar tarefa</button>
+    </div>
     </main>
 </body>
+
 </html>
