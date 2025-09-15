@@ -632,6 +632,7 @@ tbody tr:last-child td {
     cursor: pointer;
     transition: background-color 0.3s ease;
     min-width: 200px;
+    text-align: center;
 }
 
 .btn-primary-main:hover {
