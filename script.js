@@ -28,3 +28,18 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// Pega todos os botões com a classe "accordion"
+const accordions = document.querySelectorAll('.accordion');
+
+// Itera sobre cada botão
+accordions.forEach(button => {
+  // Adiciona um "ouvinte de evento" para o clique
+  button.addEventListener('click', () => {
+    // Encontra a imagem da seta dentro do botão clicado
+    const arrowImage = button.querySelector('.img-accordion');
+    
+    // Alterna a classe 'open' na imagem da seta.
+    arrowImage.classList.toggle('open');
+  });
+});
